@@ -1,14 +1,11 @@
-﻿int num()
+﻿int num2(int N)
 {   
-    int value = 3395;
-    int a = (value / 10) % 10;
-    //System.Console.WriteLine($"value: {value} a: = {a}");
-    //Сначала проверил как работает код, потом из него создал функцию num
-    int num2 =a;
-    return num2;
-
+    if ( N > 99 && N < 1000 ) return (N/10)% 10;
+    return -1;
 }    
-System.Console.WriteLine(num());
+int num = 765;
+if (num2(num)== -1) Console.WriteLine("Число не трехзначное");
+else System.Console.WriteLine(num2(num));
     
 
 
